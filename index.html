@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title" >Form</h1>
+    <p id="description" >A Quick Survey :)</p>
+    <form id="survey-form" >
+      <input id="name" type="text" required placeholder="First-Name  Last-Name" />
+      <label id="name-label">Name</label>
+      <input id="email" type="email" placeholder="mymail@example.com" required />
+      <label id="email-label" >eMail</label>
+      <input id="number" type="number" pattern="[0-9]" min="1111" max="5555" placeholder="1234" required />
+      <label id="number-label" >Password</label>
+      <select id="dropdown" >
+        <option id="0" >None</option>
+        <option id="1" >Select 1</option>
+        <option id="2" >Select 2</option>
+      </select>
+
+      <input id="radio1" type="radio" name="radio-button" value="0" checked />
+      <label for="radio1">First</label>
+      <input id="radio2" type="radio" name="radio-button" value="0" />
+      <label for="radio2">Second</label>
+
+      <label><input class="radio" type="checkbox" value="1"/>Check 1</label>
+      <label><input class="radio" type="checkbox" value="1"/>Check 2</label>
+
+      <textarea></textarea>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
